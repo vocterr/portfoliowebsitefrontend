@@ -1,101 +1,158 @@
-import Image from "next/image";
+// app/page.tsx
+"use client"; // Only necessary if you plan on using client-side interactions (state, effects, etc.)
+
+import React from "react";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="bg-black text-white min-h-screen w-full font-sans">
+      {/* 
+        HERO SECTION 
+      */}
+      <section
+        id="hero"
+        className="flex flex-col items-center justify-center text-center py-16 px-4"
+      >
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Bartosz</h1>
+        <p className="text-xl sm:text-2xl text-gray-300 mb-8">
+          Full-stack Developer • Creative Problem Solver
+        </p>
+        <a
+          href="#project"
+          className="inline-block mt-4 px-8 py-3 bg-blue-600 rounded hover:bg-blue-700 transition-colors"
+        >
+          View My Project
+        </a>
+      </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+      {/* 
+        ABOUT SECTION 
+      */}
+      <section
+        id="about"
+        className="max-w-4xl mx-auto py-16 px-4 sm:px-8"
+      >
+        <h2 className="text-3xl font-semibold mb-6">About Me</h2>
+        <p className="text-gray-300 leading-relaxed mb-4">
+          Hi, I’m Bartek, a passionate developer who loves building
+          full-stack applications using technologies like Next.js, Express,
+          Postgres, Prisma, and Tailwind CSS. My goal is to create clean,
+          efficient, and user-friendly experiences across the web.
+        </p>
+        <p className="text-gray-300 leading-relaxed">
+          When I'm not coding, I enjoy learning new frameworks, exploring UI/UX
+          best practices, and contributing to open-source projects. Feel free
+          to explore my highlighted project below and contact me if you'd like
+          to collaborate!
+        </p>
+      </section>
+
+      {/* 
+        PROJECT SECTION 
+      */}
+      <section
+        id="project"
+        className="max-w-4xl mx-auto py-16 px-4 sm:px-8 border-t border-gray-700"
+      >
+        <h2 className="text-3xl font-semibold mb-6">Featured Project</h2>
+        
+        {/* Project Info */}
+        <div className="space-y-4 text-gray-300 mb-8">
+          <h3 className="text-xl font-semibold text-white">
+            My Awesome Project
+          </h3>
+          <p>
+            This project is a full-stack web application built with Next.js,
+            Express, PostgreSQL, Prisma, and Tailwind CSS. It demonstrates a
+            clean architecture, robust authentication, and a beautiful UI.
+          </p>
+          <p>
+            Check out the live demo to explore the app, or use the demo
+            credentials below to log in and see all the features in action.
+          </p>
+        </div>
+
+        {/* Demo Credentials */}
+        <div className="bg-gray-800 p-4 rounded mb-8">
+          <h4 className="font-semibold mb-2 text-white">Demo Account:</h4>
+          <p>Email: <code className="text-blue-400">demo@myproject.com</code></p>
+          <p>Password: <code className="text-blue-400">demo123</code></p>
+        </div>
+
+        {/* Buttons/Links */}
+        <div className="flex flex-col sm:flex-row gap-4">
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://your-live-project-url.com"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block w-full sm:w-auto px-8 py-3 bg-blue-600 text-center rounded hover:bg-blue-700 transition-colors"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            View Live Project
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/your-username/your-project-repo"
             target="_blank"
             rel="noopener noreferrer"
+            className="inline-block w-full sm:w-auto px-8 py-3 bg-gray-700 text-center rounded hover:bg-gray-600 transition-colors"
           >
-            Read our docs
+            GitHub Repo
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </section>
+
+      {/* 
+        CONTACT SECTION 
+      */}
+      <section
+        id="contact"
+        className="max-w-4xl mx-auto py-16 px-4 sm:px-8 border-t border-gray-700"
+      >
+        <h2 className="text-3xl font-semibold mb-6">Contact Me</h2>
+        <p className="text-gray-300 mb-4">
+          I’m always open to discussing new projects, creative ideas, or
+          opportunities to collaborate. Feel free to reach out!
+        </p>
+
+        {/* Email */}
+        <div className="flex items-center mb-4">
+          <span className="inline-block text-gray-400 mr-2">Email:</span>
+          <a
+            className="text-blue-400 hover:text-blue-500"
+            href="mailto:youremail@example.com"
+          >
+            youremail@example.com
+          </a>
+        </div>
+
+        {/* Social Links - optional */}
+        <div className="space-y-2">
+          <a
+            href="https://www.linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-500 block"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-400 hover:text-blue-500 block"
+          >
+            GitHub
+          </a>
+        </div>
+      </section>
+
+      {/* 
+        FOOTER 
+      */}
+      <footer className="py-6 text-center border-t border-gray-700">
+        <p className="text-gray-500 text-sm">
+          © {new Date().getFullYear()} Your Name. All rights reserved.
+        </p>
       </footer>
-    </div>
+    </main>
   );
 }
