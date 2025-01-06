@@ -17,12 +17,7 @@ export default function Home() {
         <p className="text-xl sm:text-2xl text-gray-300 mb-8">
           Full-stack Developer • Creative Problem Solver
         </p>
-        <a
-          href="#project"
-          className="inline-block mt-4 px-8 py-3 bg-blue-600 rounded hover:bg-blue-700 transition-colors"
-        >
-          View My Project
-        </a>
+        
       </section>
 
       {/* 
@@ -54,12 +49,12 @@ export default function Home() {
         id="project"
         className="max-w-4xl mx-auto py-16 px-4 sm:px-8 border-t border-gray-700"
       >
-        <h2 className="text-3xl font-semibold mb-6">Featured Project</h2>
+        <h2 className="text-3xl font-semibold mb-6">My Projects</h2>
         
         {/* Project Info */}
         <div className="space-y-4 text-gray-300 mb-8">
           <h3 className="text-xl font-semibold text-white">
-            My Awesome Project
+            finAI
           </h3>
           <p>
             This project is a full-stack web application built with Next.js,
@@ -75,14 +70,15 @@ export default function Home() {
         {/* Demo Credentials */}
         <div className="bg-gray-800 p-4 rounded mb-8">
           <h4 className="font-semibold mb-2 text-white">Demo Account:</h4>
-          <p>Email: <code className="text-blue-400">demo@myproject.com</code></p>
-          <p>Password: <code className="text-blue-400">demo123</code></p>
+          <p>Name: <code className="text-blue-400">admin</code></p>
+          <p>Email: <code className="text-blue-400">admin@gmail.com</code></p>
+          <p>Password: <code className="text-blue-400">admin123</code></p>
         </div>
 
         {/* Buttons/Links */}
         <div className="flex flex-col sm:flex-row gap-4">
           <a
-            href="https://your-live-project-url.com"
+            href="https://portfolio1frontend.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto px-8 py-3 bg-blue-600 text-center rounded hover:bg-blue-700 transition-colors"
@@ -90,12 +86,20 @@ export default function Home() {
             View Live Project
           </a>
           <a
-            href="https://github.com/your-username/your-project-repo"
+            href="https://github.com/vocterr/portfolio1frontend"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto px-8 py-3 bg-gray-700 text-center rounded hover:bg-gray-600 transition-colors"
           >
-            GitHub Repo
+            GitHub Repo Frontend
+          </a>
+          <a
+            href="https://github.com/vocterr/portfolio1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block w-full sm:w-auto px-8 py-3 bg-gray-700 text-center rounded hover:bg-gray-600 transition-colors"
+          >
+            GitHub Repo Backend
           </a>
         </div>
       </section>
@@ -118,24 +122,17 @@ export default function Home() {
           <span className="inline-block text-gray-400 mr-2">Email:</span>
           <a
             className="text-blue-400 hover:text-blue-500"
-            href="mailto:youremail@example.com"
+            href="mailto: vocterdev@gmail.com"
           >
-            youremail@example.com
+            vocterdev@gmail.com
           </a>
         </div>
 
         {/* Social Links - optional */}
         <div className="space-y-2">
+          
           <a
-            href="https://www.linkedin.com/in/your-profile"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 hover:text-blue-500 block"
-          >
-            LinkedIn
-          </a>
-          <a
-            href="https://github.com/your-username"
+            href="https://github.com/vocterr"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-400 hover:text-blue-500 block"
