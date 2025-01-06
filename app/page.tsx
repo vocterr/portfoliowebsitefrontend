@@ -29,15 +29,15 @@ export default function Home() {
       >
         <h2 className="text-3xl font-semibold mb-6">About Me</h2>
         <p className="text-gray-300 leading-relaxed mb-4">
-          Hi, I’m Bartek, a passionate developer who loves building
+          Hi, My Brand's Name is Skyline Solutions, my Destiny is to Provide 
           full-stack applications using technologies like Next.js, Express,
           Postgres, Prisma, and Tailwind CSS. My goal is to create clean,
           efficient, and user-friendly experiences across the web.
         </p>
         <p className="text-gray-300 leading-relaxed">
           When I'm not coding, I enjoy learning new frameworks, exploring UI/UX
-          best practices, and contributing to open-source projects. Feel free
-          to explore my highlighted project below and contact me if you'd like
+          best practices, and generally continuously learning. Feel free
+          to explore my highlighted projects below and contact me if you'd like
           to collaborate!
         </p>
       </section>
