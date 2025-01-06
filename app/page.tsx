@@ -13,7 +13,7 @@ export default function Home() {
         id="hero"
         className="flex flex-col items-center justify-center text-center py-16 px-4"
       >
-        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Bartosz</h1>
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Skyline Solutions</h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-8">
           Full-stack Developer • Creative Problem Solver
         </p>
