@@ -13,7 +13,7 @@ export default function Home() {
         id="hero"
         className="flex flex-col items-center justify-center text-center py-16 px-4"
       >
-        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Skyline Solutions</h1>
+        <h1 className="text-4xl sm:text-6xl font-bold mb-4">Bartosz K</h1>
         <p className="text-xl sm:text-2xl text-gray-300 mb-8">
           Full-stack Developer • Creative Problem Solver
         </p>
@@ -29,7 +29,7 @@ export default function Home() {
       >
         <h2 className="text-3xl font-semibold mb-6">About Me</h2>
         <p className="text-gray-300 leading-relaxed mb-4">
-          Hi, My Brand's Name is Skyline Solutions, my Destiny is to Provide 
+          Hi, I'm Bartosz, my Destiny is to Provide 
           full-stack applications using technologies like Next.js, Express,
           Postgres, Prisma, and Tailwind CSS. My goal is to create clean,
           efficient, and user-friendly experiences across the web.
@@ -147,7 +147,7 @@ export default function Home() {
       */}
       <footer className="py-6 text-center border-t border-gray-700">
         <p className="text-gray-500 text-sm">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          © {new Date().getFullYear()} Bartosz K. All rights reserved.
         </p>
       </footer>
     </main>
