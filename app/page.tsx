@@ -1,14 +1,10 @@
-// app/page.tsx
-"use client"; // Only necessary if you plan on using client-side interactions (state, effects, etc.)
+"use client";
 
 import React from "react";
 
 export default function Home() {
   return (
     <main className="bg-black text-white min-h-screen w-full font-sans">
-      {/* 
-        HERO SECTION 
-      */}
       <section
         id="hero"
         className="flex flex-col items-center justify-center text-center py-16 px-4"
@@ -19,10 +15,6 @@ export default function Home() {
         </p>
         
       </section>
-
-      {/* 
-        ABOUT SECTION 
-      */}
       <section
         id="about"
         className="max-w-4xl mx-auto py-16 px-4 sm:px-8"
@@ -42,16 +34,13 @@ export default function Home() {
         </p>
       </section>
 
-      {/* 
-        PROJECT SECTION 
-      */}
+
       <section
         id="project"
         className="max-w-4xl mx-auto py-16 px-4 sm:px-8 border-t border-gray-700"
       >
         <h2 className="text-3xl font-semibold mb-6">My Projects</h2>
-        
-        {/* Project Info */}
+
         <div className="space-y-4 text-gray-300 mb-8">
           <h3 className="text-xl font-semibold text-white">
             finAI
@@ -67,7 +56,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Demo Credentials */}
         <div className="bg-gray-800 p-4 rounded mb-8">
           <h4 className="font-semibold mb-2 text-white">Demo Account:</h4>
           <p>Name: <code className="text-blue-400">admin</code></p>
@@ -75,7 +63,6 @@ export default function Home() {
           <p>Password: <code className="text-blue-400">admin123</code></p>
         </div>
 
-        {/* Buttons/Links */}
         <div className="flex flex-col sm:flex-row gap-4">
           <a
             href="https://portfolio1frontend.vercel.app/"
@@ -104,9 +91,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 
-        CONTACT SECTION 
-      */}
+
       <section
         id="contact"
         className="max-w-4xl mx-auto py-16 px-4 sm:px-8 border-t border-gray-700"
@@ -117,7 +102,7 @@ export default function Home() {
           opportunities to collaborate. Feel free to reach out!
         </p>
 
-        {/* Email */}
+
         <div className="flex items-center mb-4">
           <span className="inline-block text-gray-400 mr-2">Email:</span>
           <a
@@ -128,7 +113,6 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Social Links - optional */}
         <div className="space-y-2">
           
           <a
@@ -142,9 +126,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 
-        FOOTER 
-      */}
       <footer className="py-6 text-center border-t border-gray-700">
         <p className="text-gray-500 text-sm">
           © {new Date().getFullYear()} Bartosz K. All rights reserved.
