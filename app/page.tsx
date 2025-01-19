@@ -64,7 +64,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col sm:flex-row gap-4 mb-8">
           <a
-            href="https://luxry.vercel.app"
+            href="https://luxry.vercel.app/signin"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block w-full sm:w-auto px-8 py-3 bg-blue-600 text-center rounded hover:bg-blue-700 transition-colors"
